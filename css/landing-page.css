@@ -167,7 +167,6 @@ p.copyright {
 
 #projects {
     padding: 50px 0;
-    background-color: #f8f8f8;
 }
 
 #projects .section-heading {
@@ -178,8 +177,22 @@ p.copyright {
     margin-bottom: 15px;
 }
 
+#projects .project {
+    padding: 30px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+#projects .content-section-a {
+    background-color: #f8f8f8;
+}
+
+#projects .content-section-b {
+    background-color: #ffffff;
+}
+
 #projects p {
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
 }
+
