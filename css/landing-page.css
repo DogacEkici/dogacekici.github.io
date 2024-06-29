@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -43,21 +43,21 @@ h6 {
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 5em;
 }
 
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -120,7 +120,7 @@ h6 {
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
 }
 
@@ -133,17 +133,17 @@ h6 {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media (max-width: 1199px) {
     ul.banner-social-buttons {
         float: left;
         margin-top: 15px;
     }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .banner h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
         font-size: 3em;
     }
 
@@ -167,70 +167,8 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-#projects {
-    padding: 50px 0;
-}
-
-#projects .section-heading {
-    margin-bottom: 30px;
-}
-
-#projects .embed-responsive {
-    margin-bottom: 15px;
-}
-
-#projects .project {
-    padding: 30px 0;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-#projects .content-section-a {
-    background-color: #f8f8f8;
-}
-
-#projects .content-section-b {
-    background-color: #ffffff;
-}
-
-.embed-responsive {
-    margin-bottom: 15px;
-}
-
-.project p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-}
-
 :root {
     --video-scale: 1.5;
-}
-
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-    width: 100%;
-}
-
-.content-section-b {
-    padding: 50px 0;
-    background-color: #ffffff;
-    width: 100%;
-}
-
-.section-heading {
-    margin-bottom: 30px;
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
 }
 
 .embed-responsive {
@@ -250,4 +188,3 @@ p.copyright {
     font-weight: 400;
     text-align: left;
 }
-
