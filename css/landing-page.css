@@ -202,3 +202,52 @@ p.copyright {
     text-align: left;
 }
 
+:root {
+    --video-scale: 1.5;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.embed-responsive {
+    margin-bottom: 15px;
+    transform: scale(var(--video-scale));
+    transform-origin: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
