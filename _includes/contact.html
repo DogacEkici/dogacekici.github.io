@@ -1,12 +1,10 @@
 <section id="contact">
     <div class="banner">
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-6">
-                    <h2>Keep in Touch:</h2>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-start">
-                    <ul class="list-inline banner-social-buttons mb-0">
+            <div class="row align-items-center">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <h2 class="mb-0">Keep in Touch:</h2>
+                    <ul class="list-inline banner-social-buttons mb-0 ml-3 d-flex align-items-center">
                         {% for social in site.social %}
                         <li class="mr-2">
                             <a href="{{ social.url }}" class="btn btn-default btn-lg">
