@@ -1,234 +1,111 @@
-/*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+<section id="project1" class="content-section-a">
+    <div class="container">
+        <div class="row project">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Quality Control Machine Proof of Concept</h2>
+                <div class="lead">
+                    <p>Developed a proof of concept for a quality control machine to inspect products on a production line. The entire process was simulated to demonstrate feasibility. The machine captures images from six angles, processes them, and uses a Convolutional Neural Network (CNN) to determine if the product is defective based on known visual standards. Training was conducted using simulated flawless products, and defective products were processed in simulation to identify faults. Achieved an accuracy of over 85%.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls autoplay loop>
+                        <source src="img/quality_control_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-body,
-html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+<section id="project2" class="content-section-b">
+    <div class="container">
+        <div class="row project">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">2D Game Character Attack Animations with Stable Diffusion</h2>
+                <div class="lead">
+                    <p>Developed a workflow to create attack animations for a 2D game character using Stable Diffusion. The challenge was to consistently generate the same character across multiple frames. By implementing this workflow and applying minimal Photoshop edits (such as removing artifacts), I successfully produced a seamless attack animation where the character remains consistent from the first frame to the last.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls autoplay loop>
+                        <source src="img/Char.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-}
+<section id="project3" class="content-section-a">
+    <div class="container">
+        <div class="row project">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Pathfinding in Non-Continuous Maps for Game Development</h2>
+                <div class="lead">
+                    <p>In my master's thesis, I addressed a challenge in game development related to pathfinding in non-continuous maps, which include elements like jumping and climbing. While standard A* algorithms handle continuous maps efficiently, non-continuous maps require linking isolated islands, increasing development time and limiting NPC movements. I designed an AI model capable of learning and exploring the entire game map autonomously. This model's meaningful movements were recorded and used to create a map structure that mimics the learned behavior. Consequently, the game features NPCs that imitate the AI agent's navigation without real-time AI computation.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls autoplay loop>
+                        <source src="img/tezvidv.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
+<section id="project4" class="content-section-b">
+    <div class="container">
+        <div class="row project">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Passionate 3D Art Enthusiast</h2>
+                <div class="lead">
+                    <p>I am a passionate 3D art enthusiast, deeply interested in all aspects of 3D art, from modeling to animation. I dedicate my free time to learning and exploring new techniques and tools to enhance my skills in this field.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls autoplay loop>
+                        <source src="img/3dart.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-.intro-header {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../img/banner2.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 5em;
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-
-.network-name {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.content-section-a,
-.content-section-b {
-    padding: 50px 0;
-    width: 100%;
-}
-
-.content-section-a {
-    background-color: #f8f8f8;
-}
-
-.content-section-b {
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-.section-heading {
-    margin-bottom: 30px;
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-    margin-bottom: 20px;
-}
-
-.banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/banner2.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 3em;
-}
-
-.banner ul {
-    margin-bottom: 0;
-}
-
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
-@media (max-width: 1199px) {
-    .banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    .banner h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-        font-size: 3em;
-    }
-
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-}
-
-footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-p.copyright {
-    margin: 15px 0 0;
-}
-
-.embed-responsive {
-    margin-bottom: 15px;
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
-
-.embed-responsive .embed-responsive-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.embed-responsive-item img,
-.embed-responsive-item video {
-    transform: scale(1.5);
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.project {
-    display: flex;
-    align-items: center;
-}
-
-.col-lg-5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.col-lg-offset-2, 
-.col-lg-offset-1, 
-.col-sm-pull-6, 
-.col-sm-push-6 {
-    margin-left: 0;
-}
-
-@media (max-width: 767px) {
-    .col-lg-5 {
-        justify-content: flex-start;
-    }
-}
-
-.project p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-}
+<section id="project5" class="content-section-a">
+    <div class="container">
+        <div class="row project">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">3D Modeling Showcase</h2>
+                <div class="lead">
+                    <p>This project showcases my skills in 3D modeling. I created a detailed 3D model of a futuristic vehicle using Blender. The model includes intricate details and textures, demonstrating my ability to create high-quality 3D assets for games and animations.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item" src="img/futuristic_vehicle.jpg" alt="Futuristic Vehicle">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
