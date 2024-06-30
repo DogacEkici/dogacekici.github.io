@@ -177,12 +177,6 @@ p.copyright {
     margin-bottom: 15px;
 }
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
 
 .project p {
     font-size: 16px;
@@ -190,13 +184,19 @@ p.copyright {
     text-align: left;
 }
 
-.embed-responsive-item {
+.video-container {
     display: flex;
-    transform: scale(1.5);
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Tam yüksekliği kapsaması için */
 }
 
+.embed-responsive-item {
+    transform: scale(1.5);
+    transform-origin: center;
+}
+
+/* Küçük ekranlarda ölçeği eski haline getirmek için */
 @media (max-width: 767px) {
     .embed-responsive-item {
         transform: scale(1);
