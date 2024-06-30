@@ -182,6 +182,8 @@ p.copyright {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+    overflow: hidden; /* Taşan kısımları gizleyin */
+    position: relative; /* Mutlak konumlandırma için gerekli */
 }
 
 .project p {
@@ -191,14 +193,14 @@ p.copyright {
 }
 
 .embed-responsive-item {
-    display: flex;
-    transform: scale(1.5);
-    justify-content: center;
-    align-items: center;
+    transform: translate(-50%, -50%) scale(1.5); /* Videoyu ortalayın ve büyütün */
+    position: absolute; /* Mutlak konumlandırma ile ortalayın */
+    top: 50%; /* Ortalamak için üstten 50% */
+    left: 50%; /* Ortalamak için soldan 50% */
 }
 
 @media (max-width: 767px) {
     .embed-responsive-item {
-        transform: scale(1);
+        transform: translate(-50%, -50%) scale(1); /* Küçük ekranlarda ölçeği sıfırlayın ve ortalayın */
     }
 }
