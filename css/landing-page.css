@@ -175,6 +175,21 @@ p.copyright {
 
 .embed-responsive {
     margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.embed-responsive .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
 }
 
 .video-container {
@@ -212,13 +227,4 @@ p.copyright {
     font-size: 16px;
     font-weight: 400;
     text-align: left;
-}
-
-.embed-responsive-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    transform: scale(1.5);
 }
