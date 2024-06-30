@@ -218,6 +218,7 @@ p.copyright {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150%;
+    width: 100%;
     height: auto;
+    transform: scale(1.5);
 }
