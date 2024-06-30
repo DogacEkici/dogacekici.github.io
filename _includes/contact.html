@@ -1,14 +1,14 @@
 <section id="contact">
     <div class="banner">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
                     <h2>Keep in Touch:</h2>
                 </div>
-                <div class="col-lg-9 text-right">
-                    <ul class="list-inline banner-social-buttons">
+                <div class="col-lg-6 d-flex justify-content-start">
+                    <ul class="list-inline banner-social-buttons mb-0">
                         {% for social in site.social %}
-                        <li>
+                        <li class="mr-2">
                             <a href="{{ social.url }}" class="btn btn-default btn-lg">
                                 <i class="fa fa-{{ social.title }} fa-fw"></i>
                                 <span class="network-name">{{ social.title }}</span>
