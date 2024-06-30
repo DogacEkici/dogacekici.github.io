@@ -215,3 +215,7 @@ p.copyright {
     padding: revert;
     padding-top: 10px;
 }
+
+.intro-message {
+    padding-right: 750px;
+}
