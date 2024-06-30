@@ -177,26 +177,28 @@ p.copyright {
     margin-bottom: 15px;
 }
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    overflow: hidden; /* Taşan kısımları gizleyin */
-    position: relative; /* Mutlak konumlandırma için gerekli */
-}
-
 .project p {
     font-size: 16px;
     font-weight: 400;
     text-align: left;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    overflow: hidden; /* Taşan kısımları gizleyin */
+    position: relative;
+}
+
 .embed-responsive-item {
-    transform: translate(-50%, -50%) scale(1.5); /* Videoyu ortalayın ve büyütün */
     position: absolute; /* Mutlak konumlandırma ile ortalayın */
     top: 50%; /* Ortalamak için üstten 50% */
     left: 50%; /* Ortalamak için soldan 50% */
+    transform: translate(-50%, -50%) scale(1.5); /* Videoyu ortalayın ve büyütün */
+    width: auto; /* Genişliği otomatik ayarlayın */
+    height: auto; /* Yüksekliği otomatik ayarlayın */
 }
 
 @media (max-width: 767px) {
